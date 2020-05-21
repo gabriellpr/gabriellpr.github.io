@@ -158,14 +158,6 @@ section.resume-section .resume-item .resume-date a:hover {
   color: #4c8db3;
 }
 
-section.goals {
-  margin-top: -20%;
-  margin-bottom: -10%;
-}
-section.hobbies {
-  margin-top: -20%;
-}
-
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -208,4 +200,81 @@ a:hover,
 a:focus,
 a:active {
   color: #4c8db3;
+}
+
+/**** TODO STYLE *****/
+.container {
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(19, 17, 126, 0.1);
+}
+
+.container h1 {
+  background: rgb(19, 17, 126);
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: normal;
+}
+.fa-plus {
+  float: right;
+  margin-top: 10%;
+}
+
+.container li {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: rgb(19, 17, 126);
+}
+
+.container p {
+  font-size: 12px;
+}
+
+.container li:nth-child(2n) {
+  background: #f7f7f7;
+}
+.container li span {
+  background: rgb(19, 17, 126);
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+  border-radius: 50%;
+}
+.container li:hover span {
+  width: 40px;
+  opacity: 1;
+}
+.container input {
+  font-size: 15px;
+  color: rgb(19, 17, 126);
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  box-sizing: border-box;
+  border: 3px solid rgba(19, 17, 126, 0);
+}
+
+.container input:focus {
+  background: #fff;
+  border: 3px solid rgb(19, 17, 126);
+  outline: none;
+}
+i:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
